@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model_Deployment</title>
+</head>
+<body>
+    <h2>Document_Model_Testing</h2>
+    <form method="POST" action="/predict">
+        <label for="carat">Carat:</label>
+        <input type="number" id="carat" name="carat" min="0.2" max="5.01" step="0.01" placeholder="0.75">
+        <br><br>
+        <label for="cut">Cut:</label>
+        <select id="cut" name="cut">
+            <option value="1">Fair</option>
+            <option value="2">Good</option>
+            <option value="3">Very Good</option>
+            <option value="4">Premium</option>
+            <option value="5">Ideal</option>
+        </select>
+        <br><br>
+        <label for="clarity">Clarity:</label>
+        <select id="clarity" name="clarity">
+            <option value="1">I1</option>
+            <option value="2">SI2</option>
+            <option value="3">SI1</option>
+            <option value="4">VS1</option>
+            <option value="5">VS2</option>
+            <option value="6">VVS2</option>
+            <option value="7">VVS1</option>
+            <option value="8">IF</option>
+        </select>
+        <br><br>
+        <label for="color">Color:</label>
+        <select id="color" name="color">
+            <option value="5">DEF</option>
+            <option value="4">GHIJ</option>
+            <option value="3">KLM</option>
+            <option value="2">NOPQR</option>
+            <option value="1">STUVWXYZ</option>
+        </select>
+        <br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
